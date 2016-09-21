@@ -15,7 +15,7 @@ Vue.use(VueConfirm);
 ```JavaScript
 /* 
 * @usage
-* vm.$confirm(options).then(confirmCallback, [cancelCallback]);
+* vm.$confirm(options).then(confirmCallback);
 * 
 * @return value
 * a ES6 promise that can use promise chains
@@ -34,8 +34,6 @@ vm.$confirm({
     cancelTxt: 'cancel btn txt' //default is 'NO'
 }).then(function(){
 	//do something when confirmed	
-}, function () {
-	//do something when canceled
 });
 ;
 ```

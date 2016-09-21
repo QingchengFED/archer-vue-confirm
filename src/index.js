@@ -15,7 +15,7 @@ export default {
         Vue.prototype.$confirm = function (config) {
 
             return new Promise(function (resolve, reject) {
-                if (confirmInstance) resolve();
+                if (confirmInstance) return;
 
                 confirmInstance = new confirmConstructor({
                     el: document.createElement('div'),
@@ -31,12 +31,11 @@ export default {
                         onConfirm () {
                             confirmInstance.$remove();
                             confirmInstance = null;
-                            resolve && resolve({status: 200});
+                            resolve();
                         },
                         onCancel () {
                             confirmInstance.$remove();
                             confirmInstance = null;
-                            reject && reject();
                         }
                     }
                 });
