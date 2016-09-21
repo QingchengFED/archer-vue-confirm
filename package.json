@@ -1,6 +1,6 @@
 {
   "name": "archer-vue-confirm",
-  "version": "1.0.0",
+  "version": "0.1.1",
   "description": "A vue confirm component for qingcheng mobile projects.",
   "main": "dist/index.js",
   "scripts": {
@@ -33,7 +33,7 @@
     "type": "git",
     "url": "git+https://github.com/QingchengFED/archer-vue-confirm.git"
   },
-  "author": "wxttt@qingcheng.it",
+  "author": "undefined_shawn",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/QingchengFED/archer-vue-confirm/issues"

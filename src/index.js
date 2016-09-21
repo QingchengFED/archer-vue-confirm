@@ -31,12 +31,12 @@ export default {
                         onConfirm () {
                             confirmInstance.$remove();
                             confirmInstance = null;
-                            resolve({status: 200});
+                            resolve && resolve({status: 200});
                         },
                         onCancel () {
                             confirmInstance.$remove();
                             confirmInstance = null;
-                            reject();
+                            reject && reject();
                         }
                     }
                 });
