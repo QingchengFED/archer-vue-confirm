@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vue confirm demo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+
+<button @click="showTitleConfirm">Show Confirm With Title</button>
+<button @click="showMessageConfirm">Show Confirm With Title & Message</button>
+<button @click="showRawHtmlConfirm">Show Confirm With Raw_html</button>
+<p v-if="txt">{{txt}}</p>
+
+<script src="../node_modules/vue/dist/vue.js"></script>
+<script src="/demo/dist/index.js"></script>
+
+</body>
+</html>
