@@ -5,7 +5,7 @@
  */
 import confirm from '../dist/index'
 
-Vue.use(confirm);
+Vue.use(confirm, {confirmTxt: '确定', cancelTxt: '取消'});
 
 new Vue({
     el: 'body',

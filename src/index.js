@@ -21,10 +21,10 @@ export default {
                     el: document.createElement('div'),
                     data () {
                         return {
-                            title: config.title,
-                            message: config.message,
-                            confirmTxt: config.confirmTxt || 'YES',
-                            cancelTxt: config.cancelTxt || 'NO'
+                            title: config.title || options.title || 'Confirm',
+                            message: config.message || options.message || 'Are you sure?',
+                            confirmTxt: config.confirmTxt || options.confirmTxt || 'YES',
+                            cancelTxt: config.cancelTxt || options.cancelTxt || 'NO'
                         }
                     },
                     methods: {
@@ -36,6 +36,7 @@ export default {
                         onCancel () {
                             confirmInstance.$remove();
                             confirmInstance = null;
+                            reject && reject();
                         }
                     }
                 });
