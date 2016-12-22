@@ -21,8 +21,8 @@ export default {
                     el: document.createElement('div'),
                     data () {
                         return {
-                            title: config.title || options.title || 'Confirm',
-                            message: config.message || options.message || 'Are you sure?',
+                            title: config.title || options.title || '',
+                            message: config.message || options.message || '',
                             confirmTxt: config.confirmTxt || options.confirmTxt || 'YES',
                             cancelTxt: config.cancelTxt || options.cancelTxt || 'NO'
                         }
