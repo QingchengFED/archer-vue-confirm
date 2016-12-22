@@ -7,7 +7,7 @@
 import confirmOptions from './confirm.vue'
 
 export default {
-    install (Vue, options) {
+    install (Vue, options = {}) {
 
         var confirmConstructor = Vue.extend(confirmOptions),
             confirmInstance = null;
