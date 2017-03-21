@@ -26,7 +26,9 @@ export default {
                             confirmTxt: config.confirmTxt || options.confirmTxt || 'YES',
                             cancelTxt: config.cancelTxt || options.cancelTxt || 'NO',
                             confirmColor: config.confirmColor || options.confirmColor || '',
-                            cancelColor: config.cancelColor || options.cancelColor || ''
+                            cancelColor: config.cancelColor || options.cancelColor || '',
+                            icon: config.icon || options.icon || '',
+                            confirmWidth: config.confirmWidth || options.confirmWidth || ''
                         }
                     },
                     methods: {
