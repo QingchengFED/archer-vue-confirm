@@ -1,4 +1,5 @@
 @font-color-main: #333;
+@font-color-sub: #888;
 @font-color-highLight: #00BFBF;
 @bg-color-main: #fff;
 
@@ -29,10 +30,14 @@
   .confirm-mainWrap {
     padding: 20px;
   }
+  .confirm-icnWrap {
+      text-align: center;
+      margin-bottom: 15px;
+  }
   .confirm-titleWrap {
     .title {
       margin: 0;
-      line-height: 1.1em;
+      line-height: 24px;
       color: @font-color-main;
       font-size: 17px;
       font-weight: normal;
@@ -43,8 +48,8 @@
     padding: 12px 0 0 0;
     .ctn {
       margin: 0;
-      line-height: 1.2em;
-      color: @font-color-main;
+      line-height: 1.5;
+      color: @font-color-sub;
       font-size: 13px;
       text-align: center;
     }
@@ -65,6 +70,9 @@
       box-sizing: border-box;
       &.btn-half {
         width: 50%;
+      }
+      &.btn-sub {
+          color: @font-color-main;
       }
     }
   }

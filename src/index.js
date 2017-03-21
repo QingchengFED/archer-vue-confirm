@@ -24,24 +24,26 @@ export default {
                             title: config.title || options.title || '',
                             message: config.message || options.message || '',
                             confirmTxt: config.confirmTxt || options.confirmTxt || 'YES',
-                            cancelTxt: config.cancelTxt || options.cancelTxt || 'NO'
+                            cancelTxt: config.cancelTxt || options.cancelTxt || 'NO',
+                            confirmColor: config.confirmColor || options.confirmColor || '',
+                            cancelColor: config.cancelColor || options.cancelColor || ''
                         }
                     },
                     methods: {
                         onConfirm () {
-                            confirmInstance.$remove();
+                            confirmInstance.$el.remove();
                             confirmInstance = null;
                             resolve();
                         },
                         onCancel () {
-                            confirmInstance.$remove();
+                            confirmInstance.$el.remove();
                             confirmInstance = null;
                             reject && reject();
                         }
                     }
                 });
 
-                confirmInstance.$appendTo(document.body);
+                document.body.appendChild(confirmInstance.$el);
             });
 
         }
