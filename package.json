@@ -1,6 +1,6 @@
 {
   "name": "archer-vue-confirm",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "A vue confirm component for qingcheng mobile projects.",
   "main": "dist/index.js",
   "scripts": {
