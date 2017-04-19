@@ -1,6 +1,6 @@
 <template>
 	<div class="g-layerWrap">
-		<div class="m-confirm" :style="{width: confirmWidth}">
+		<div class="m-confirm" :style="{width: confirmWidth, marginTop: marginTop}">
 			<div class="confirm-mainWrap">
 				<div class="confirm-icnWrap" v-if="icon">
 					  <i class="icn" :class="[icon]"></i>
